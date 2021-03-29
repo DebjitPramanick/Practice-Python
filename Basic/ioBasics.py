@@ -14,20 +14,42 @@
 
 
 
+# File reading
+
+# f = open("sample.txt", "r") # Opening file in read mode
+# content = f.read()
+# print(content)
+#
+# print("Read line")
+#
+#
+# f = open("sample.txt", "rt") # Opening file in read mode
+# # content = f.readline()
+# # print("Firsst line - ", content)
+#
+# content = f.readlines()
+# print("All lines - ", content)
+#
+# f.close()
+
+
+
+
 # File writing
 
-f = open("sample.txt", "r") # Opening file in read mode
-content = f.read()
-print(content)
+# f = open("sample.txt", "w")
+# a = f.write("Debjit loves coding.") # a will store number of characters
+# print(a)
+# f.close()
 
-print("Read line")
 
 
-f = open("sample.txt", "rt") # Opening file in read mode
-# content = f.readline()
-# print("Firsst line - ", content)
+# File read and writing
 
-content = f.readlines()
-print("All lines - ", content)
-
+f = open("sample.txt", "r+")
+c = f.read()
+print(c)
+f.write("Thank you.")
+print(f.read())
 f.close()
+
